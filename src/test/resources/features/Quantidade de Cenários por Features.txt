@@ -1,0 +1,7 @@
+Quantidade de Cenários por Features:
+
+Minha Conta Mantis: 25
+Gerenciador Geral: 13
+Login Mantis: 06* - 05
+Acessando Outros Menus Mantis: 04
+Criar Nova Tarefa Mantis: 06
