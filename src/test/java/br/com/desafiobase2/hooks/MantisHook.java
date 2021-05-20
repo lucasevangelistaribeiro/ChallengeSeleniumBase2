@@ -21,8 +21,8 @@ public class MantisHook {
         }
     }
 
-    @After
-    public void after() throws IOException {
-        Runtime.getRuntime().exec("cmd.exe /c mvn serenity:aggregate");
-    }
+//    @After
+//    public void after() throws IOException {
+//        Runtime.getRuntime().exec("cmd.exe /c mvn serenity:aggregate");
+//    }
 }
