@@ -2,6 +2,7 @@ package br.com.desafiobase2.hooks;
 
 import br.com.desafiobase2.enums.DadosUsuarioMantis;
 import br.com.desafiobase2.types.UsuarioMantis;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import net.serenitybdd.core.Serenity;
 import java.io.FileNotFoundException;
@@ -18,5 +19,10 @@ public class MantisHook {
         catch (FileNotFoundException ex) {
             System.out.println("Não foi possível ler o arquivo de json." + ex);
         }
+    }
+
+    @After
+    public void after() throws IOException {
+        Runtime.getRuntime().exec("cmd.exe /c mvn serenity:aggregate");
     }
 }
